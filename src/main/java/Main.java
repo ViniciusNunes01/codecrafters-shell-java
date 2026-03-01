@@ -4,12 +4,16 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 
 		Scanner sc = new Scanner(System.in);
-		
-		while(true) {
+
+		String command = "";
+
+		while (!"exit".equals(command)) {
 			System.out.print("$ ");
-			String command = sc.nextLine();
-			System.out.print(command + ": command not found");
-			System.out.println();
+			command = sc.nextLine();
+			if (!"exit".equals(command)) {
+				System.out.print(command + ": command not found");
+				System.out.println();
+			}
 		}
 	}
 }
