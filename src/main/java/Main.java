@@ -4,12 +4,12 @@ public class Main {
 	public static void main(String[] args) throws Exception {
 
 		Scanner sc = new Scanner(System.in);
-
-		System.out.print("$ ");
-
-		String command = sc.nextLine();
-		System.out.print(command + ": command not found");
-
-		sc.close();
+		
+		while(true) {
+			System.out.print("$ ");
+			String command = sc.nextLine();
+			System.out.print(command + ": command not found");
+			System.out.println();
+		}
 	}
 }
